@@ -1,9 +1,9 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="mussie.png" alt="logo" width="300px"  height="300px" />
+  <img src="mussie.png" alt="logo" width="300px"/>
   <br/>
-  <h3><b>🏆 Leaderboard</b></h3>
+  <h3><b>🏆 Leaderboard App🏆</b></h3>
 </div>
 
 # 📗 Table of Contents
@@ -76,8 +76,9 @@ In order to run this project, you need to have a web browser installed on your c
 
 Clone this repository to your desired folder by running the following command:
 
-````sh
+```sh
   clone git@github.com:MussieTeka/Leaderboard.git
+```
 
 ### Install
 
@@ -87,7 +88,7 @@ Run npm install to install all dependencies
   cd Leaderboard
   npm install
 
-````
+```
 
 ### Usage
 
