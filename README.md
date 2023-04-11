@@ -2,7 +2,6 @@
 
 <div align="center">
   <img src="mussie.png" alt="logo" width="300px"/>
-  <br/>
   <h3><b>🏆 Leaderboard App🏆</b></h3>
 </div>
 
