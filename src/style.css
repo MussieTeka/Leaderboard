@@ -1,7 +1,75 @@
 body {
-  background-color: bisque;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+.container {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+.column-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-p {
-  text-transform: uppercase;
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+input[type='text'],
+input[type='number'] {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  box-sizing: border-box;
+}
+button {
+  background-color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #999;
 }
