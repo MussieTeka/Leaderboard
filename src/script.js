@@ -1,25 +1,10 @@
 import './style.css';
-const baseURL =
-  'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
-const gameID = 'RbBfY29cuiZeXF2FORdh';
 
 const getScoresButton = document.querySelector('.column-top button');
 const submitForm = document.querySelector('form');
 
-// Create a new game with the API
-async function createGame() {
-  const response = await fetch(`${baseURL}/games/`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      name: 'My New Game',
-    }),
-  });
-  const data = await response.json();
-  return data.result.split(':')[1].trim(); // Extract the game ID from the response
-}
+const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
+const gameId = '5Wo68C2OZONvrxYYkjF7';
 
 // Get scores for the game with the specified ID
 async function getScores(gameId) {
@@ -51,16 +36,15 @@ submitForm.addEventListener('submit', async (event) => {
   const nameInput = document.querySelector('#name');
   const scoreInput = document.querySelector('#score');
   const name = nameInput.value;
-  const score = parseInt(scoreInput.value);
-  await submitScore(gameID, name, score);
-  alert('Score submitted successfully!');
+  const score = scoreInput.value;
+  await submitScore(gameId, name, score);
   nameInput.value = '';
   scoreInput.value = '';
 });
 
 // Handle "Refresh" button click to get scores for the game
 getScoresButton.addEventListener('click', async () => {
-  const scores = await getScores(gameID);
+  const scores = await getScores(gameId);
   const tableBody = document.querySelector('tbody');
   tableBody.innerHTML = '';
   scores.forEach((score) => {
@@ -74,11 +58,3 @@ getScoresButton.addEventListener('click', async () => {
     tableBody.appendChild(row);
   });
 });
-
-// To display the added game socres
-fetch(
-  `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores/`
-)
-  .then((response) => response.json())
-  .then((data) => console.log(data))
-  .catch((error) => console.error(error));
