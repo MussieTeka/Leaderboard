@@ -18,6 +18,7 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
+  - [API Documentation](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -30,13 +31,13 @@
 
 # 📖 Leaderboard <a name="about-project"></a>
 
-This repository sets up the basic HTML and CSS for the leaderboard feature on the website. The leaderboard currently displays recent scores and provides simple input fields for users to add their name and score.
+This repository sets up the basic HTML, CSS and JavaScript for a leaderboard feature on a website. The leaderboard displays recent scores and allows users to submit their own scores, which are then added to the leaderboard in descending order.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-- Client: HTML, CSS.
+- Client: HTML, CSS, JavaScript.
 - Server: Not applicable
 - Database: Not applicable
 
@@ -44,7 +45,8 @@ This repository sets up the basic HTML and CSS for the leaderboard feature on th
   <summary>Client</summary>
   <ul>
     <li><a href="https://www.w3.org/html/">HTML</a></li>
-    <li><a ref="https://www.w3.org/Style/CSS/">CSS</a></li> 
+    <li><a ref="https://www.w3.org/Style/CSS/">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>
   </ul>
 </details>
 
@@ -52,6 +54,7 @@ The project was built using the following technologies:
 
 - HTML
 - CSS
+- JavaScript
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -59,7 +62,8 @@ The project was built using the following technologies:
 
 - **View recent scores**
 - **Submit your own score**
-- **Simple HTML and CSS structure**
+- **Sort scores in descending order**
+- **Error handling for invalid input**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,6 +120,10 @@ To run tests for the Leaderboard App, follow these steps:
 
 You can deploy this project using any web hosting service of your choice.
 
+### API Documentation
+
+See the <a href="https://microverse.notion.site/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3">API documentation</a> for more information on the endpoints available.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -134,8 +142,7 @@ This project was developed by:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Add API support for retrieving and submitting scores.**
-- **mplement pagination for the leaderboard table to display more scores.**
+- **Implement a more advanced search system that allows users to filter scores.**
 - **Add sorting and filtering options for the leaderboard table.**
 - **Add user authentication to prevent duplicate or fake scores.**
 - **Add ability to share scores on social media platforms.**
@@ -161,6 +168,8 @@ If you like this project, please give it a star on GitHub.
 I would like to thank the following resources and individuals for their help and inspiration:
 
 - <a href="https://www.microverse.org/">Microverse</a>, an online software engineering coding bootcamp.
+- <a href="https://www.theodinproject.com/">The Odin Project</a>, a free open-source curriculum for learning web development.
+- <a href="https://pages.github.com/">GitHub Pages</a>, a free web hosting service.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
