@@ -4,8 +4,7 @@ const getScoresButton = document.querySelector('.column-top button');
 const submitForm = document.querySelector('form');
 const tableBody = document.querySelector('tbody');
 
-const baseURL =
-  'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
+const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
 const gameId = 'JNpem9Nk2cN6NkOU8kz3';
 
 // Get scores for the game with the specified ID
