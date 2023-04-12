@@ -18,7 +18,7 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
-  - [API Documentation](#triangular_flag_on_post-deployment)
+  - [API Documentation](#API-documentation)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
