@@ -7,7 +7,7 @@
     <title>Leaderboard</title>
   </head>
   <body>
-    <h1>Leaderboard</h1>
+    <h1 id="leaderboard">Leaderboard</h1>
     <div class="container">
       <div class="column">
         <div class="column-top">
@@ -25,15 +25,26 @@
         </table>
       </div>
       <div class="column">
-        <h2>Add Your Score</h2>
+        <h2 class="add-score">Add Your Score</h2>
         <form>
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
 
-          <label for="score">Your Score:</label>
-          <input type="number" id="score" name="score" step="0.001" required />
+          <input
+            type="number"
+            id="score"
+            name="score"
+            step="0.01"
+            placeholder="Your Score"
+            required
+          />
 
-          <button type="submit">Submit</button>
+          <button class="submit-btn" type="submit">Submit</button>
         </form>
       </div>
     </div>
