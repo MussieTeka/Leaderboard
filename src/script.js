@@ -4,8 +4,9 @@ const getScoresButton = document.querySelector('.column-top button');
 const submitForm = document.querySelector('form');
 const tableBody = document.querySelector('tbody');
 
-const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
-const gameId = 'JNpem9Nk2cN6NkOU8kz3';
+const baseURL =
+  'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
+const gameId = 'dVw5hPIFc4hsNRt3w3Ww';
 
 // Get scores for the game with the specified ID
 const getScores = async (gameId) => {
@@ -35,15 +36,17 @@ const submitScore = async (gameId, user, score) => {
 const displayScores = async () => {
   const scores = await getScores(gameId);
   tableBody.innerHTML = '';
-  scores.forEach((score) => {
-    const row = document.createElement('tr');
-    const userCell = document.createElement('td');
-    userCell.textContent = score.user;
-    const scoreCell = document.createElement('td');
-    scoreCell.textContent = score.score;
-    row.appendChild(userCell);
-    row.appendChild(scoreCell);
-    tableBody.appendChild(row);
+  scores.forEach((score, index) => {
+    if (index < 10) {
+      const row = document.createElement('tr');
+      const userCell = document.createElement('td');
+      userCell.textContent = score.user;
+      const scoreCell = document.createElement('td');
+      scoreCell.textContent = score.score;
+      row.appendChild(userCell);
+      row.appendChild(scoreCell);
+      tableBody.appendChild(row);
+    }
   });
 };
 
@@ -67,3 +70,19 @@ submitForm.addEventListener('submit', async (event) => {
 getScoresButton.addEventListener('click', async () => {
   await displayScores();
 });
+
+// Adding typing effect to heading
+const heading = document.getElementById('leaderboard');
+const text = heading.innerText;
+let index = 0;
+heading.innerText = '';
+
+function type() {
+  heading.innerText += text[index];
+  index++;
+  if (index === text.length) {
+    clearInterval(intervalId);
+  }
+}
+
+const intervalId = setInterval(type, 100);
