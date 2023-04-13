@@ -4,8 +4,7 @@ const getScoresButton = document.querySelector('.column-top button');
 const submitForm = document.querySelector('form');
 const tableBody = document.querySelector('tbody');
 
-const baseURL =
-  'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
+const baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
 const gameId = 'dVw5hPIFc4hsNRt3w3Ww';
 
 // Get scores for the game with the specified ID
@@ -77,12 +76,14 @@ const text = heading.innerText;
 let index = 0;
 heading.innerText = '';
 
+let intervalId; // declare intervalId variable
+
 function type() {
   heading.innerText += text[index];
-  index++;
+  index += 1;
   if (index === text.length) {
     clearInterval(intervalId);
   }
 }
 
-const intervalId = setInterval(type, 100);
+intervalId = setInterval(type, 100);

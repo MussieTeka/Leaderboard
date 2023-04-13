@@ -34,6 +34,7 @@ h2 {
 .add-score {
   text-align: center;
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -147,7 +148,7 @@ button:first-of-type:hover {
 
 footer {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   background-color: #444c5c;
   border-top: 1px solid #3b424c;
@@ -164,15 +165,18 @@ footer {
   90% {
     transform: translateX(-1px);
   }
+
   20%,
   80% {
     transform: translateX(2px);
   }
+
   30%,
   50%,
   70% {
     transform: translateX(-4px);
   }
+
   40%,
   60% {
     transform: translateX(4px);
@@ -184,6 +188,7 @@ footer {
     transform: scale(1);
     box-shadow: none;
   }
+
   to {
     transform: scale(1.1);
     box-shadow: 0 0 0 2px #f4a261;
@@ -194,9 +199,11 @@ footer {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
+
   100% {
     transform: scale(1);
   }
