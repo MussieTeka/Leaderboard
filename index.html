@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard</title>
+  <script defer src="index.bundle.js"></script></head>
+  <body>
+    <h1 id="leaderboard">Leaderboard</h1>
+    <div class="container">
+      <div class="column">
+        <div class="column-top">
+          <h2>Recent Scores</h2>
+          <button>Refresh</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="column">
+        <h2 class="add-score">Add Your Score</h2>
+        <form>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <input
+            type="number"
+            id="score"
+            name="score"
+            step="0.01"
+            placeholder="Your Score"
+            required
+          />
+
+          <button class="submit-btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <footer>&copy; 2023 The Leadeboard Website</footer>
+  </body>
+</html>
