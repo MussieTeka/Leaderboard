@@ -11,6 +11,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+- [🚀 Live Demo ](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -64,6 +65,12 @@ The project was built using the following technologies:
 - **Submit your own score**
 - **Sort scores in descending order**
 - **Error handling for invalid input**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a id="live-demo"></a>
+
+- Click [here](https://leaderboard-1vfb.onrender.com/) to view the live Demo. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
